@@ -1,0 +1,19 @@
+:root {
+  --bgColor: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bgColor);
+}
+
+main .hero pre {
+  filter: invert(255);
+  transform: scale(60%);
+}

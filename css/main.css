@@ -1,0 +1,110 @@
+:root {
+  --bgColor: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bgColor);
+  height: 100vh;
+  width: 100vw;
+  font-family: monospace;
+}
+
+main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 375px;
+  max-width: 700px;
+}
+
+/* ##   Hero but in ascii text   ## */
+main .hero pre {
+  filter: invert(255);
+  transform: scale(100%);
+}
+
+/* ###  Hero Image  ### */
+
+main .hero {
+  max-width: 100vw;
+  grid-column: span 2;
+  padding: 1rem 7rem;
+}
+
+main .hero img {
+  /* max-width: 100vw;
+     */
+  width: 100%;
+  max-width: 500px;
+  /* opacity: 90%; */
+
+  /* max-width: 100vw; */
+}
+/* #################### */
+
+/* ###  The List  ### */
+
+main .lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2rem;
+  width: 90vw;
+  max-width: 500px;
+  border: dashed 1px gray;
+  padding: 1rem 0;
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+/* main .lists::after {
+  content: "";
+  height: 100%;
+  width: 3px;
+  position: absolute;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-left: dashed gray 1px;
+} */
+
+main .lists .list {
+  margin: 0 2rem;
+}
+
+main .lists .list .title,
+main .lists .list li a {
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.2rem 0.2rem;
+}
+
+main .lists .list li a:hover {
+  /* background-color: rgb(36, 36, 36);
+  border-radius: 0.2rem; */
+  opacity: 50%;
+}
+
+main .lists .list .title {
+  color: gray;
+}
+
+main .lists .list li:first-of-type {
+  margin-top: 1rem;
+}
+
+main .lists .list li {
+  margin-bottom: 0.5rem;
+}
+/* #################### */
