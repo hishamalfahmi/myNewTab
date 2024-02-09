@@ -41,6 +41,7 @@ main .hero {
   max-width: 100vw;
   grid-column: span 2;
   padding: 1rem 7rem;
+  margin: 2rem 0;
 }
 
 main .hero img {
@@ -62,10 +63,11 @@ main .lists {
   margin-top: 2rem;
   width: 90vw;
   max-width: 500px;
-  border: dashed 1px gray;
+  border: dashed 1.5px gray;
   padding: 1rem 0;
   position: relative;
   border-radius: 0.5rem;
+  padding-bottom: 3rem;
 }
 
 /* main .lists::after {
@@ -108,3 +110,10 @@ main .lists .list li {
   margin-bottom: 0.5rem;
 }
 /* #################### */
+
+main .lists .list1 {
+  padding-left: 2rem;
+}
+main .lists .list2 {
+  padding-left: 2rem;
+}
