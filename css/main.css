@@ -111,9 +111,13 @@ main .lists .list li {
 }
 /* #################### */
 
-main .lists .list1 {
+.lists .list1,
+.lists .list3 {
   padding-left: 2rem;
+  padding-bottom: 2rem;
 }
-main .lists .list2 {
+
+.lists .list2,
+.list4 {
   padding-left: 2rem;
 }
